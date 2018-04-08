@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Authors>IcoCryptex</Authors>
+    <Company>IcoCryptex</Company>
+    <Product>IcoCryptex.Net</Product>
+    <PackageProjectUrl>https://github.com/IcoCryptex/IcoCryptex.Net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/IcoCryptex/IcoCryptex.Net</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags>IcoCryptex, Api, Exchange, Crypto, Currency, Official</PackageTags>
+    <Description>A Syncronous/Asyncronous library to communicate with the IcoCryptex.io API.</Description>
+    <Copyright>IcoCryptex</Copyright>
+    <PackageLicenseUrl>https://github.com/IcoCryptex/IcoCryptex.Net/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageId>IcoCryptex.Net</PackageId>
+    <RootNamespace>IcoCryptex.Net</RootNamespace>
+    <AssemblyName>IcoCryptex.Net</AssemblyName>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+</Project>

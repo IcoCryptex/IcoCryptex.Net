@@ -1,0 +1,12 @@
+/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/bin/Debug/netcoreapp2.0/IcoCryptex.Net.Examples.deps.json
+/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/bin/Debug/netcoreapp2.0/IcoCryptex.Net.Examples.runtimeconfig.json
+/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/bin/Debug/netcoreapp2.0/IcoCryptex.Net.Examples.runtimeconfig.dev.json
+/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/bin/Debug/netcoreapp2.0/IcoCryptex.Net.Examples.dll
+/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/bin/Debug/netcoreapp2.0/IcoCryptex.Net.Examples.pdb
+/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/bin/Debug/netcoreapp2.0/IcoCryptex.Net.dll
+/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/bin/Debug/netcoreapp2.0/IcoCryptex.Net.pdb
+/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/obj/Debug/netcoreapp2.0/IcoCryptex.Net.Examples.csproj.CoreCompileInputs.cache
+/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/obj/Debug/netcoreapp2.0/IcoCryptex.Net.Examples.AssemblyInfoInputs.cache
+/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/obj/Debug/netcoreapp2.0/IcoCryptex.Net.Examples.AssemblyInfo.cs
+/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/obj/Debug/netcoreapp2.0/IcoCryptex.Net.Examples.dll
+/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/obj/Debug/netcoreapp2.0/IcoCryptex.Net.Examples.pdb
