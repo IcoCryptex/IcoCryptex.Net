@@ -42,5 +42,11 @@ namespace IcoCryptex.Net.Client.Implementations
         {
             return await _client.ApiUtility.Get<IceOrderTransaction[]>($"/history/{symbolPair.Name}", false);
         }
+
+        public decimal GetSuggestedPrice(IceSymbolPair symbolPair) => GetSuggestedPriceAsync(symbolPair).Result;
+        public async Task<decimal> GetSuggestedPriceAsync(IceSymbolPair symbolPair)
+        {
+            return await _client.ApiUtility.Get<decimal>($"/pairs/suggestedPrice/{symbolPair.Name}", false);
+        }
     }
 }

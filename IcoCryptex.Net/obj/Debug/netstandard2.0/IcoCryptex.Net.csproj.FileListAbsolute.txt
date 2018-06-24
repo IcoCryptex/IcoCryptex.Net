@@ -1,8 +1,8 @@
-/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net/bin/Debug/netstandard2.0/IcoCryptex.Net.deps.json
-/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net/bin/Debug/netstandard2.0/IcoCryptex.Net.dll
-/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net/bin/Debug/netstandard2.0/IcoCryptex.Net.pdb
-/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net/obj/Debug/netstandard2.0/IcoCryptex.Net.csproj.CoreCompileInputs.cache
-/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net/obj/Debug/netstandard2.0/IcoCryptex.Net.AssemblyInfoInputs.cache
-/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net/obj/Debug/netstandard2.0/IcoCryptex.Net.AssemblyInfo.cs
-/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net/obj/Debug/netstandard2.0/IcoCryptex.Net.dll
-/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net/obj/Debug/netstandard2.0/IcoCryptex.Net.pdb
+/opt/buildagent/work/d737071055908799/IcoCryptex.Net/bin/Debug/netstandard2.0/IcoCryptex.Net.deps.json
+/opt/buildagent/work/d737071055908799/IcoCryptex.Net/bin/Debug/netstandard2.0/IcoCryptex.Net.dll
+/opt/buildagent/work/d737071055908799/IcoCryptex.Net/bin/Debug/netstandard2.0/IcoCryptex.Net.pdb
+/opt/buildagent/work/d737071055908799/IcoCryptex.Net/obj/Debug/netstandard2.0/IcoCryptex.Net.csproj.CoreCompileInputs.cache
+/opt/buildagent/work/d737071055908799/IcoCryptex.Net/obj/Debug/netstandard2.0/IcoCryptex.Net.AssemblyInfoInputs.cache
+/opt/buildagent/work/d737071055908799/IcoCryptex.Net/obj/Debug/netstandard2.0/IcoCryptex.Net.AssemblyInfo.cs
+/opt/buildagent/work/d737071055908799/IcoCryptex.Net/obj/Debug/netstandard2.0/IcoCryptex.Net.dll
+/opt/buildagent/work/d737071055908799/IcoCryptex.Net/obj/Debug/netstandard2.0/IcoCryptex.Net.pdb

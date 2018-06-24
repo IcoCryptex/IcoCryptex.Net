@@ -3083,11 +3083,11 @@
   "project": {
     "version": "1.0.1",
     "restore": {
-      "projectUniqueName": "/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net/IcoCryptex.Net.csproj",
+      "projectUniqueName": "/opt/buildagent/work/d737071055908799/IcoCryptex.Net/IcoCryptex.Net.csproj",
       "projectName": "IcoCryptex.Net",
-      "projectPath": "/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net/IcoCryptex.Net.csproj",
+      "projectPath": "/opt/buildagent/work/d737071055908799/IcoCryptex.Net/IcoCryptex.Net.csproj",
       "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net/obj/",
+      "outputPath": "/opt/buildagent/work/d737071055908799/IcoCryptex.Net/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

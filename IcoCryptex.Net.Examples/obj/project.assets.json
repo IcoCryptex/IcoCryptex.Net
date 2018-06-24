@@ -3583,11 +3583,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/IcoCryptex.Net.Examples.csproj",
+      "projectUniqueName": "/opt/buildagent/work/d737071055908799/IcoCryptex.Net.Examples/IcoCryptex.Net.Examples.csproj",
       "projectName": "IcoCryptex.Net.Examples",
-      "projectPath": "/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/IcoCryptex.Net.Examples.csproj",
+      "projectPath": "/opt/buildagent/work/d737071055908799/IcoCryptex.Net.Examples/IcoCryptex.Net.Examples.csproj",
       "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net.Examples/obj/",
+      "outputPath": "/opt/buildagent/work/d737071055908799/IcoCryptex.Net.Examples/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"
@@ -3604,8 +3604,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net/IcoCryptex.Net.csproj": {
-              "projectPath": "/opt/buildagent/work/453802ea44e8354f/IcoCryptex.Net/IcoCryptex.Net.csproj"
+            "/opt/buildagent/work/d737071055908799/IcoCryptex.Net/IcoCryptex.Net.csproj": {
+              "projectPath": "/opt/buildagent/work/d737071055908799/IcoCryptex.Net/IcoCryptex.Net.csproj"
             }
           }
         }
