@@ -1,24 +1,21 @@
 ﻿using System;
-using System.Net;
+using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using IcoCryptex.Net.Client;
 using IcoCryptex.Net.Extensions;
-using Newtonsoft.Json;
 
 namespace IcoCryptex.Net.Utility
 {
     public class ApiUtil
     {
-        private static readonly Encoding Encoding = Encoding.UTF8;
         internal const string ApiVersion = "v1";
 
         private readonly string _host;
         private readonly ushort _port;
         private readonly IceClient _client;
-        private string _scheme;
+        private readonly string _scheme;
 
         public ApiUtil(string host, ushort port, bool ssl, IceClient client)
         {
@@ -26,7 +23,6 @@ namespace IcoCryptex.Net.Utility
             _port = port;
             _client = client;
             _scheme = ssl ? "https" : "http";
-
         }
 
         public Task<string> Get(string pathAndQuery, bool secureCall = true) => Call(HttpMethod.Get, pathAndQuery, null, secureCall);
@@ -41,35 +37,41 @@ namespace IcoCryptex.Net.Utility
         public Task<string> Put(string pathAndQuery, object data, bool secureCall = true) => Call(HttpMethod.Put, pathAndQuery, data, secureCall);
         public Task<T> Put<T>(string pathAndQuery, object data, bool secureCall = true) => Put(pathAndQuery, data, secureCall).ThenDeserializeAs<T>();
 
-        public async Task<string> Call(HttpMethod method, string pathAndQuery, object data, bool secureCall = true)
+        public Task<string> Call(HttpMethod method, string pathAndQuery, object data, bool secureCall = true)
         {
-            var url = new UriBuilder(_scheme,_host,_port, $"{ApiVersion}/{pathAndQuery.Trim('/')}".TrimEnd('/'));
+            var url = new UriBuilder(_scheme,_host,_port, $"/{ApiVersion}/{pathAndQuery.Trim('/')}".TrimEnd('/'));
             // Add a new Request Message
-            var requestMessage = new HttpRequestMessage(method, url.Uri);
-
+            var headers = new Dictionary<string, string>();
             if (secureCall)
             {
+                var nonce = GetNonce();
                 // Add our custom headers
-                requestMessage.Headers.Add("key", _client.Identity.Key);
-                requestMessage.Headers.Add("nonce", GetNonce().ToString());
-                requestMessage.Headers.Add("sign", Signature.Create(_client.Identity.Secret, url.Path));
+                headers.Add("key", _client.Identity.Key);
+                headers.Add("nonce", nonce.ToString());
+                headers.Add("sign", Signature.Create(_client.Identity.Secret, url.Path, nonce));
             }
 
-            // Add request body
-            var client = new HttpClient();
-            if (data != null)
+            if (method == HttpMethod.Get)
             {
-                requestMessage.Content = new StringContent(JsonConvert.SerializeObject(data), Encoding);
+                return WebUtility.Get(url.Uri.ToString(), headers);
             }
-            // Send the request to the server
-            var responseMessage = await client.SendAsync(requestMessage);
-            var response = await responseMessage.Content.ReadAsStringAsync();
-            if (responseMessage.StatusCode != HttpStatusCode.OK)
+
+            if (method == HttpMethod.Post)
             {
-                throw new Exception($"{responseMessage.ReasonPhrase} : {response}");
+                return WebUtility.Post(url.Uri.ToString(), data, headers);
             }
-            // Get the response
-            return response;
+
+            if (method == HttpMethod.Put)
+            {
+                return WebUtility.Put(url.Uri.ToString(), data, headers);
+            }
+
+            if (method == HttpMethod.Delete)
+            {
+                return WebUtility.Delete(url.Uri.ToString(), headers);
+            }
+            
+            throw new NotImplementedException();
         }
 
         public long GetNonce()

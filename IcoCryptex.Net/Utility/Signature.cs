@@ -8,9 +8,9 @@ namespace IcoCryptex.Net.Utility
     {
         private static readonly Encoding Encoding = Encoding.UTF8;
 
-        public static string Create(string apiSecret, string pathAndQuery)
+        public static string Create(string apiSecret, string pathAndQuery, long nonce)
         {
-            pathAndQuery = pathAndQuery.ToLower();
+            pathAndQuery = $"{pathAndQuery}?nonce={nonce}".ToLower();
             var secretBytes = Encoding.GetBytes(apiSecret);
             using (var crypt = new HMACSHA512(secretBytes))
             {

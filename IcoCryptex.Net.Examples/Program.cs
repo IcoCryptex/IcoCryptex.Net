@@ -13,9 +13,10 @@ namespace IcoCryptex.Net.Examples
             var symbols = client.Public.GetSymbols();
             var symbolPairs = client.Public.GetPairs();
 
-            var btcTrx = symbolPairs.FirstOrDefault(pair => pair.Name == "btc-trx");
+            var btcGto = symbolPairs.FirstOrDefault(pair => pair.Name == "BTC-GTO");
 
-            var orderResult = client.Order.CreateOrder(btcTrx, OrderType.Buy, 1, 1);
+            var openOrdersResult = client.Order.GetOpenOrders();
+            var orderResult = client.Order.CreateOrder(btcGto, OrderType.Buy, 1, 1);
         }
     }
 }
