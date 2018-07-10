@@ -18,7 +18,7 @@
     <RootNamespace>IcoCryptex.Net</RootNamespace>
     <AssemblyName>IcoCryptex.Net</AssemblyName>
     <FileVersion>1.0.0.0</FileVersion>
-    <Version>1.0.1</Version>
+    <Version>1.0.4</Version>
   </PropertyGroup>
 
   <ItemGroup>

@@ -822,7 +822,7 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "IcoCryptex.Net/1.0.1": {
+      "IcoCryptex.Net/1.0.4": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -3564,7 +3564,7 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "IcoCryptex.Net/1.0.1": {
+    "IcoCryptex.Net/1.0.4": {
       "type": "project",
       "path": "../IcoCryptex.Net/IcoCryptex.Net.csproj",
       "msbuildProject": "../IcoCryptex.Net/IcoCryptex.Net.csproj"
@@ -3572,7 +3572,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "IcoCryptex.Net >= 1.0.1",
+      "IcoCryptex.Net >= 1.0.4",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },

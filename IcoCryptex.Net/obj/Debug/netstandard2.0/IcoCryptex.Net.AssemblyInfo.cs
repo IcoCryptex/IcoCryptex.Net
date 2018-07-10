@@ -12,7 +12,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("IcoCryptex")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A Syncronous/Asyncronous library to communicate with the IcoCryptex.io API.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.4")]
 [assembly: System.Reflection.AssemblyProductAttribute("IcoCryptex.Net")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IcoCryptex.Net")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

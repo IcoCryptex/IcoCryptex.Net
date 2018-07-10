@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>IcoCryptex.Net</id>
+    <version>1.0.4</version>
+    <authors>IcoCryptex</authors>
+    <owners>IcoCryptex</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/IcoCryptex/IcoCryptex.Net/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/IcoCryptex/IcoCryptex.Net</projectUrl>
+    <description>A Syncronous/Asyncronous library to communicate with the IcoCryptex.io API.</description>
+    <copyright>IcoCryptex</copyright>
+    <tags>IcoCryptex, Api, Exchange, Crypto, Currency, Official</tags>
+    <repository type="GIT" url="https://github.com/IcoCryptex/IcoCryptex.Net" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/opt/buildagent/work/d737071055908799/IcoCryptex.Net/bin/Debug/netstandard2.0/IcoCryptex.Net.dll" target="lib/netstandard2.0/IcoCryptex.Net.dll" />
+  </files>
+</package>

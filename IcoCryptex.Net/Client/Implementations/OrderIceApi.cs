@@ -15,10 +15,10 @@ namespace IcoCryptex.Net.Client.Implementations
             _client = client;
         }
 
-        public Dictionary<string, List<IceOrder>> GetOpenOrders() => GetOpenOrdersAsync().Result;
-        public Task<Dictionary<string, List<IceOrder>>> GetOpenOrdersAsync()
+        public List<IceOrder> GetOpenOrders() => GetOpenOrdersAsync().Result;
+        public Task<List<IceOrder>> GetOpenOrdersAsync()
         {
-            return _client.ApiUtility.Get<Dictionary<string, List<IceOrder>>>($"/order");
+            return _client.ApiUtility.Get<List<IceOrder>>($"/order");
         }
 
         public IceOrder GetOrder(long orderId) => GetOrderAsync(orderId).Result;
@@ -40,11 +40,11 @@ namespace IcoCryptex.Net.Client.Implementations
             return _client.ApiUtility.Post<IceRequestResult>($"/order/{symbolPair.Name}", data);
         }
 
-        public Dictionary<string, List<IceOrderTransaction>> GetOrderHistory(IceSymbolPair symbolPair = null) => GetOrderHistoryAsync(symbolPair).Result;
-        public Task<Dictionary<string, List<IceOrderTransaction>>> GetOrderHistoryAsync(IceSymbolPair symbolPair = null)
+        public List<IceOrderTransaction> GetOrderHistory(IceSymbolPair symbolPair = null) => GetOrderHistoryAsync(symbolPair).Result;
+        public Task<List<IceOrderTransaction>> GetOrderHistoryAsync(IceSymbolPair symbolPair = null)
         {
-            var route = symbolPair == null ? $"/history" : $"/history/{symbolPair.Name}";
-            return _client.ApiUtility.Get<Dictionary<string, List<IceOrderTransaction>>>(route);
+            var route = symbolPair == null ? $"/order/history" : $"/order/history/{symbolPair.Name}";
+            return _client.ApiUtility.Get<List<IceOrderTransaction>>(route);
         }
     }
 }
